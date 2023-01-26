@@ -1,8 +1,9 @@
 <?php
 /*
- * @package: LoginLogoff
+ * @package: Aplicacion Final
  * @author: Alejandro Otálvaro Marulanda
- * INDEX EN EL QUE SOLO SE MODIFICA LA VISA, EL FOOTER ESTÁ AQUÍ PORQUE ES SIEMPRE EL MISMO EN TODAS LAS PÁGINAS.
+ * @since: 26 01 2023
+ * INDEX EN EL QUE SOLO SE MODIFICA LA VISTA, EL FOOTER ESTÁ AQUÍ PORQUE ES SIEMPRE EL MISMO EN TODAS LAS PÁGINAS.
  */
 ?>
 
@@ -11,7 +12,7 @@
 
     <head>
         <meta charset="UTF-8">
-        <title>LOGIN / LOGOFF</title>
+        <title>Aplicacion Final</title>
         <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet"> 
         <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Rajdhani:wght@300&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Chela+One&display=swap" rel="stylesheet">
@@ -26,7 +27,7 @@
             <header>
                 <h1>ALEJANDRO OTÁLVARO MARULANDA</h1>
                 <br>
-                <h3>LOGIN LOGOFF</h3>
+                <h3>APLICACIÓN FINAL</h3>
             </header>
             <div class="paginaEnCurso">
                 <section>

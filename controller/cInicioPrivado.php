@@ -1,8 +1,9 @@
 <?php
 
 /*
- * @package: LoginLogoff
+ * @package: Aplicacion Final
  * @author: Alejandro Otálvaro Marulanda
+ * @since: 26 01 2023
  */
 if (isset($_REQUEST["detalle"])) {
     $_SESSION['paginaAnterior'] = $_SESSION['paginaEnCurso'];

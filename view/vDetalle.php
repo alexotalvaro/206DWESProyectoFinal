@@ -1,7 +1,8 @@
 <?php
 /*
- * @package: LoginLogoff
+ * @package: Aplicacion Final
  * @author: Alejandro Otálvaro Marulanda
+ * @since: 26 01 2023
  */
 ?>
 <form>
@@ -10,9 +11,23 @@
 <h3>Detalle </h3>
 <table>
     <?php
-    print '<tr><td>';
-    print $_SESSION['usuarioDWES206LoginLogoff']->toString();
-    print '</tr></td>';
+    foreach ($_SESSION as $clave => $valor) {
+        echo '<tr><td>' . $clave . '</td>';
+        if (is_object($valor)) {
+            echo '<td>';
+            var_dump($valor);
+            echo '</td></tr>';
+        } else {
+            echo '<td>' . $valor . '</td></tr>';
+        }
+    }
+
+//    echo '<h1> $_SESSION </h1>';
+//    print '<tr><td> Pagina en Curso: ' . $_SESSION['paginaEnCurso'] . '</td></tr>';
+//    print '<tr><td> Pagina Anterior: ' . $_SESSION['paginaAnterior'] . '</td></tr>';
+//    print '<tr><td>';
+//    var_dump($_SESSION['usuarioDWES206LoginLogoff']);
+//    print '</td></tr>';
     ?>
 </table>
 <?php

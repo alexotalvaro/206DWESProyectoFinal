@@ -1,8 +1,9 @@
 <?php
 
 /*
- * @package: LoginLogoff
+ * @package: Aplicacion Final
  * @author: Alejandro Otálvaro Marulanda
+ * @since: 26 01 2023
  */
 
 require_once 'config/confApp.php';
@@ -28,39 +29,27 @@ class UsuarioPDO implements UsuarioDB {
         }
     }
 
-//    public static function registrarUltimaConexion($codUsuario) {
-//        try {
-//            $miDB = new PDO(DSN, USUARIO, CONTRA); //Conexion a la BD muestra los datos y guarda el objeto
-//            $sentenciaSQL = "UPDATE T01_Usuario SET T01_NumConexiones=T01_NumConexiones+1,T01_FechaHoraUltimaConexion=now() WHERE T01_CodUsuario='$aRespuesta[usuario]'";
-//            $oUsuario = DBPDO::ejecutarConsulta($sentenciaSQL);
-//            if ($oUsuario) {
-//                return true;
-//            } else {
-//                return false;
-//            }
-//        } catch (PDOException $error) {
-//            $error = new AppError($codError, $descError);
-//            //$_SESSION['error'] = $error;
-//            return $error;
-//        } finally {
-//            unset($miDB);
-//        }
-//    }
-
     public static function registrarUltimaConexion($usuario) {
-        //$usuario->setFechaHoraUltimaConexionAnterior($usuario->getFechaHoraUltimaConexion());
-        $usuario->setFechaHoraUltimaConexion(time());
         $usuario->setNumConexiones($usuario->getNumConexiones() + 1);
-
         $sUpdate = <<<QUERY
             UPDATE T01_Usuario SET T01_NumConexiones={$usuario->getNumConexiones()},
-            T01_FechaHoraUltimaConexion = {$usuario->getFechaHoraUltimaConexion()}
+            T01_FechaHoraUltimaConexion = now()
             WHERE T01_CodUsuario='{$usuario->getCodUsuario()}';
+        QUERY;
+
+        $oUsuario = DBPDO::ejecutarConsulta($sUpdate);
+
+        return $oUsuario;
+    }
+
+    public static function registrarUsuario($codUsuario, $password, $descUsuario) {
+        $sUpdate = <<<QUERY
+            INSERT INTO T01_Usuario values("{$codUsuario}",sha2("{$codUsuario}{$password}",256),"{$descUsuario}",1,now(),'usuario',null);
         QUERY;
 
         DBPDO::ejecutarConsulta($sUpdate);
 
-        return $usuario;
+        return new Usuario($codUsuario, hash('sha256', $codUsuario . $password), $descUsuario, 1, new DateTime(), 'usuario');
     }
 
 }

@@ -1,8 +1,8 @@
 <?php
-
 /*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Scripting/EmptyPHP.php to edit this template
+ * @package: Aplicacion Final
+ * @author: Alejandro Otálvaro Marulanda
+ * @since: 26 01 2023
  */
 require_once 'config/confApp.php';
 

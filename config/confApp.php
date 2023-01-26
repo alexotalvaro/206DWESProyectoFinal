@@ -1,7 +1,7 @@
 <?php
 
 /*
- * @package: LoginLogoff
+ * @package: Aplicacion Final
  * @author: Alejandro Otálvaro Marulanda
  * Arrays donde guardo las localizaciones de los controladores y las vistas.
  * Los require de todos los modelos.

@@ -1,8 +1,9 @@
 <?php
 
 /*
- * @package: LoginLogoff
+ * @package: Aplicacion Final
  * @author: Alejandro Otálvaro Marulanda
+ * @since: 26 01 2023
  */
 $aErrores = ['usuario' => null, 'contra' => null];
 $aRespuesta = ['usuario' => null, 'contra' => null];
@@ -30,7 +31,7 @@ if (isset($_REQUEST["inicioSesion"])) { //Si pulsamos en botón de iniciar sesio
     if ($oUsuario) {
         UsuarioPDO::registrarUltimaConexion($oUsuario);
         session_start();
-        $_SESSION['usuarioDWES206LoginLogoff'] = $oUsuario; // Guardamos en la sesion el usuario.
+        $_SESSION['usuarioDWES206ProyectoFinal'] = $oUsuario; // Guardamos en la sesion el usuario.
         $_SESSION['paginaAnterior'] = $_SESSION['paginaEnCurso'];
         $_SESSION['paginaEnCurso'] = 'inicioprivado'; //La página en curso ahora será la del INICIO PRIVADO ...
         header('Location: index.php'); //y me voy al index, en el cual, se cargara paginaencurso(INICIO PRIVADO)y ahí decide que hacer..

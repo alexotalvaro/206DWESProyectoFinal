@@ -1,8 +1,13 @@
 <?php
 
 /*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Scripting/EmptyPHP.php to edit this template
+ * Objeto Usuario
+ * 
+ * Define un objeto Usuario
+ * 
+ * @package: Aplicacion Final
+ * @author: Alejandro Otálvaro Marulanda
+ * @since: 26 01 2023
  */
 
 class Usuario {
@@ -12,8 +17,9 @@ class Usuario {
     private $descUsuario;
     private $numConexiones;
     private $fechaHoraUltimaConexion;
-    // private $fechaHoraUltimaConexionAnterior;
+    private $fechaHoraUltimaConexionAnterior;
     private $perfil;
+
     //private $imagenUsuario;
 
     public function __construct($codUsuario, $password, $descUsuario, $numConexiones, $fechaHoraUltimaConexion, $perfil) {
@@ -21,8 +27,8 @@ class Usuario {
         $this->password = $password;
         $this->descUsuario = $descUsuario;
         $this->numConexiones = $numConexiones;
-        $this->fechaHoraUltimaConexion = $fechaHoraUltimaConexion;
-        //$this->fechaHoraUltimaConexionAnterior = $fechaHoraUltimaConexionAnterior;
+        $this->fechaHoraUltimaConexion = new Datetime();
+        $this->fechaHoraUltimaConexionAnterior = $fechaHoraUltimaConexion;
         $this->perfil = $perfil;
         //$this->imagenUsuario = $imagenUsuario;
     }
