@@ -18,7 +18,7 @@ if (isset($_REQUEST["modificar"])) {
 }
 if (isset($_REQUEST["borrar"])) {
     $_SESSION['paginaAnterior'] = $_SESSION['paginaEnCurso'];
-    $_SESSION['paginaEnCurso'] = 'borrarcuenta';
+    $_SESSION['paginaEnCurso'] = 'wip';
     header('Location: index.php');
     exit;
 }
