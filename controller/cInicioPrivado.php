@@ -1,5 +1,4 @@
 <?php
-
 /*
  * @package: Aplicacion Final
  * @author: Alejandro Otálvaro Marulanda
@@ -8,6 +7,36 @@
 if (isset($_REQUEST["detalle"])) {
     $_SESSION['paginaAnterior'] = $_SESSION['paginaEnCurso'];
     $_SESSION['paginaEnCurso'] = 'detalle';
+    header('Location: index.php');
+    exit;
+}
+if (isset($_REQUEST["modificar"])) {
+    $_SESSION['paginaAnterior'] = $_SESSION['paginaEnCurso'];
+    $_SESSION['paginaEnCurso'] = 'micuenta';
+    header('Location: index.php');
+    exit;
+}
+if (isset($_REQUEST["borrar"])) {
+    $_SESSION['paginaAnterior'] = $_SESSION['paginaEnCurso'];
+    $_SESSION['paginaEnCurso'] = 'borrarcuenta';
+    header('Location: index.php');
+    exit;
+}
+if (isset($_REQUEST["rest"])) {
+    $_SESSION['paginaAnterior'] = $_SESSION['paginaEnCurso'];
+    $_SESSION['paginaEnCurso'] = 'rest';
+    header('Location: index.php');
+    exit;
+}
+if (isset($_REQUEST["mtoDpto"])) {
+    $_SESSION['paginaAnterior'] = $_SESSION['paginaEnCurso'];
+    $_SESSION['paginaEnCurso'] = 'mantenimiento';
+    header('Location: index.php');
+    exit;
+}
+if (isset($_REQUEST["error"])) {
+    $_SESSION['paginaAnterior'] = $_SESSION['paginaEnCurso'];
+    $_SESSION['paginaEnCurso'] = 'error';
     header('Location: index.php');
     exit;
 }

@@ -21,8 +21,9 @@ class DBPDO implements DB {
         } catch (PDOException $error) {
             //pendiente guardar error en la session;
             //$error = new AppError();
-            //$_SESSION['error'] = $error;
-            return $error->getMessage();
+            //$_SESSION['error'] = new AppError($error->getCodError(),$error->getDescError());
+            $error->getMessage();
+            
         } finally {
             unset($miDB);
         }
