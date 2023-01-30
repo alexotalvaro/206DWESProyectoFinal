@@ -19,11 +19,7 @@ class DBPDO implements DB {
             //creamos el resultado de la consulta y lo guardamos en un objeto.
             return $oResultado;
         } catch (PDOException $error) {
-            //pendiente guardar error en la session;
-            //$error = new AppError();
-            //$_SESSION['error'] = new AppError($error->getCodError(),$error->getDescError());
-            $error->getMessage();
-            
+            $_SESSION['error'] = new ErrorApp($error->getCode(), $error->getMessage(), $error->getFile(), $error->getLine(), $_SESSION['paginaAnterior']);
         } finally {
             unset($miDB);
         }
