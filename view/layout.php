@@ -18,13 +18,15 @@
         <link href="https://fonts.googleapis.com/css2?family=Chela+One&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
         <link href="./webroot/css/estilos-inicioPublico.css" rel="stylesheet" type="text/css">
-
     </head>
 
     <body>
         <div class="container">
 
             <header>
+                <div class="divReloj">
+                    <script src="../webroot/js/reloj.js">script</script>
+                </div>
                 <h1>ALEJANDRO OTÁLVARO MARULANDA</h1>
                 <br>
                 <h3>APLICACIÓN FINAL</h3>

@@ -5,6 +5,7 @@
  * @since: 26 01 2023
  */
 ?>
+<h3>Login</h3>
 <form method="post">
     <label class="tituloC"> Usuario: </label>
     <input class="cajaL" type = "text" name = "usuario" placeholder="Usuario">

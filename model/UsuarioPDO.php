@@ -21,9 +21,7 @@ class UsuarioPDO implements UsuarioDB {
                 return false;
             }
         } catch (PDOException $error) {
-            $error = new AppError($codError, $descError);
-            //$_SESSION['error'] = $error;
-            return $error;
+            $_SESSION['error'] = new ErrorApp($error->getCodError(), $error->getDescError());
         } finally {
             unset($miDB);
         }
@@ -52,6 +50,18 @@ class UsuarioPDO implements UsuarioDB {
         return new Usuario($codUsuario, hash('sha256', $codUsuario . $password), $descUsuario, 1, new DateTime(), 'usuario');
     }
 
-}
+    public static function borrarUsuario($codUsuario) {
+        try {
+            $sUpdate = <<<QUERY
+            DELETE FROM T01_Usuario WHERE T01_CodUsuario="{$codUsuario}");
+        QUERY;
 
-// REGISTRAR ULTIMA CONEXION
+            DBPDO::ejecutarConsulta($sUpdate);
+            return true;
+        } catch (PDOException $error) {
+            $error->getMessage();
+            return false;
+        }
+    }
+
+}

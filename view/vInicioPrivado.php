@@ -6,7 +6,7 @@
  */
 ?>
 <h3>Inicio Privado</h3>
-<form>
+<form method="post">
     <?php 
         echo 'Bienvenido: '.$_SESSION['usuarioDWES206ProyectoFinal']->getDescUsuario();
                     echo '<br>';
@@ -21,5 +21,13 @@
     ?>
     <br>
     <input class="botonLogin" type="submit" name="detalle" value="Detalle">
+    <input class="botonLogin" type="submit" name="modificar" value="Modificar Usuario">
+    <input class="botonLogin" type="submit" name="borrar" value="Borrar Usuario">
+    <br>
+    <input class="botonLogin" type="submit" name="rest" value="REST">
+    <input class="botonLogin" type="submit" name="mtoDpto" value="Mtto Dpto">
+    <br>
+    <input class="botonLogin" type="submit" name="error" value="Error">
     <input class="botonLogin" type="submit" name="salir" value="Salir">
+    
 </form>

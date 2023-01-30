@@ -18,7 +18,7 @@
     font-family: 'Rajdhani', sans-serif;
     font-size: 1.5rem;
     /*    background: #87d2df  ;*/
-     
+
 }
 
 
@@ -198,4 +198,9 @@ footer {
 }
 #radio6:checked ~ .navigation-auto .auto-btn6{
     background: #40D3DC;
+}
+
+.divReloj img{
+    width: 65px;
+    height: 65px;
 }
