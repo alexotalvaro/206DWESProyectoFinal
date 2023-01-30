@@ -1,4 +1,5 @@
 <?php
+
 /*
  * @package: Aplicacion Final
  * @author: Alejandro Otálvaro Marulanda
@@ -35,6 +36,7 @@ if (isset($_REQUEST["mtoDpto"])) {
     exit;
 }
 if (isset($_REQUEST["error"])) {
+    DBPDO::ejecutarConsulta("INSERT INTO T_02Usera VALUES('pepe')");
     $_SESSION['paginaAnterior'] = $_SESSION['paginaEnCurso'];
     $_SESSION['paginaEnCurso'] = 'error';
     header('Location: index.php');

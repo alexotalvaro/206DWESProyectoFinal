@@ -21,13 +21,6 @@
             echo '<td>' . $valor . '</td></tr>';
         }
     }
-
-//    echo '<h1> $_SESSION </h1>';
-//    print '<tr><td> Pagina en Curso: ' . $_SESSION['paginaEnCurso'] . '</td></tr>';
-//    print '<tr><td> Pagina Anterior: ' . $_SESSION['paginaAnterior'] . '</td></tr>';
-//    print '<tr><td>';
-//    var_dump($_SESSION['usuarioDWES206LoginLogoff']);
-//    print '</td></tr>';
     ?>
 </table>
 <?php
