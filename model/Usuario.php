@@ -1,6 +1,6 @@
 <?php
 
-/*
+/**
  * Objeto Usuario
  * 
  * Define un objeto Usuario
@@ -9,7 +9,6 @@
  * @author: Alejandro Otálvaro Marulanda
  * @since: 26 01 2023
  */
-
 class Usuario {
 
     private $codUsuario;
@@ -22,6 +21,15 @@ class Usuario {
 
     //private $imagenUsuario;
 
+    /**
+     * Constructor
+     * 
+     * Constructor del objeto usuario
+     * 
+     * @package: Aplicacion Final
+     * @author: Alejandro Otálvaro Marulanda
+     * @since: 26 01 2023
+     */
     public function __construct($codUsuario, $password, $descUsuario, $numConexiones, $fechaHoraUltimaConexion, $perfil) {
         $this->codUsuario = $codUsuario;
         $this->password = $password;
