@@ -8,19 +8,22 @@
 
 class REST {
 
-    public static function apiNasa() {
-        $apiKey = "xwbo4dgOUps0eNUlUFZmzWTwaEXPlUXDIaCj89ag";
-        $apiNasa = [
-//        "copyright"=>"",
-//            "date"=>"",
-//            "explanation"=>"",
-//            "hdurl"=>"",
-//            "media_type"=>"",
-//            "service_version"=>"",
-//            "title"=>"",
-            "url" => ""];
+    public static function apiNasa($fecha = null) {
+//$apiKey = "xwbo4dgOUps0eNUlUFZmzWTwaEXPlUXDIaCj89ag";
+//$apiNasa = [
+//"copyright" => "",
+// "date" => "",
+// "explanation" => "",
+// "hdurl" => "",
+// "media_type" => "",
+// "service_version" => "",
+// "title" => "",
+// "url" => ""];
+        $respuesta = file_get_contents("https://api.nasa.gov/planetary/apod?api_key=xwbo4dgOUps0eNUlUFZmzWTwaEXPlUXDIaCj89ag");
 
-        $respuesta = file_get_contents("https://api.nasa.gov/planetary/apod?api_key='$apiKey'");
+        $respuestaJson = json_decode($respuesta);
+//$apiNasa['url']=$respuestaJson['url'];
+        return $respuestaJson;
     }
 
 }

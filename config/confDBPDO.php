@@ -8,8 +8,8 @@
  * @params: 
  */
 
-define("DSN", 'mysql:dbname=DB206DWESLoginLogoff;host=192.168.20.19');
-define("USUARIO", 'user206DWESLoginLogoff');
+define("DSN", 'mysql:dbname=DB206DWESProyectoFinal;host=192.168.1.214');
+define("USUARIO", 'user206DWESProyectoFinal');
 define("CONTRA", 'paso');
 
 
