@@ -7,7 +7,7 @@
  */
 
 if (isset($_REQUEST["pedir"])) {
-    $aApi=REST::apiNasa();
+    $_SESSION['apiNasa']=REST::apiNasa();
     header('Location: index.php');
     exit;
 }

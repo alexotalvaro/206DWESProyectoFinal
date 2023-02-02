@@ -12,10 +12,14 @@
     <!--    <label>Fecha: </label>
    <input type="date" name="fecha">-->
     <?php
-    if (!empty($aApi)) {
-        var_dump($aApi);
-    }
-    ?>
+    if (!empty($_SESSION['apiNasa'])) {
+        ?>   
+    <img src="<?php echo $_SESSION['apiNasa']?>" width="300vw" height="300vh">
+        <br>
+    <?php } ?>
+
+
+
     <input class = "botonLogin" type = "submit" name = "pedir" value = "Pedir">
 
     <input class = "botonLogin" type = "submit" name = "volver" value = "Volver">
