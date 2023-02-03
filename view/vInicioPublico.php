@@ -8,6 +8,7 @@
 <form>
     <input class="botonLogin" type="submit" name="iniciarsesion" value="Iniciar Sesion" >
     <input class="botonLogin" type="submit" name="registro" value="Registrarse">
+    <a href="doc/" target="_blank" style="text-decoration: none; color: black;">Listado de PDF </a>
 </form>
 <div class="slider">
     <div class="slides">
@@ -18,34 +19,34 @@
         <input type="radio" name="radio-btn" id="radio5">
         <input type="radio" name="radio-btn" id="radio6">
         <div class="slide first">
-            <a href="doc/230110ArbolDeNavegaciónLoginLogoffMulticapaPOO.pdf" target="_blank">
+            <a href="doc/230129ArbolDeNavegación.pdf" target="_blank">
                 <img src="doc/img/arbolNavegacion.png" alt="">
             </a>
 
         </div>
         <div class="slide">
-            <a href="doc/221109CatalogoDeRequisitos.pdf" target="_blank">
-            <img src="doc/img/catalogoRequsitos.png" alt="">
+            <a href="doc/230129CatalogoDeRequisitos.pdf" target="_blank">
+                <img src="doc/img/catalogoRequsitos.png" alt="">
             </a>
         </div>
         <div class="slide">
-            <a href="doc/230110DiagramaDeClasesLoginLogoffMulticapaPOO.pdf" target="_blank">
-            <img src="doc/img/diagramaClases.png" alt="">
+            <a href="doc/230129DiagramaDeClases.pdf" target="_blank">
+                <img src="doc/img/diagramaClases.png" alt="">
             </a>
         </div>
         <div class="slide">
             <a href="doc/230110FicherosLoginLogoffMulticapaPOO.pdf" target="_blank">
-            <img src="doc/img/ficherosGenericos.png" alt="">
+                <img src="doc/img/ficherosGenericos.png" alt="">
             </a>
         </div>
         <div class="slide">
             <a href="doc/201127ModeloFisicoDeDatos20-21.pdf" target="_blank">
-            <img src="doc/img/modeloFisicoDatos.png" alt="">
+                <img src="doc/img/modeloFisicoDatos.png" alt="">
             </a>
         </div>
         <div class="slide">
-            <a href="doc/RelaciónDeFicheros.pdf" target="_blank">
-            <img src="doc/img/relacionFicheros.png" alt="">
+            <a href="doc/230129RelaciónDeFicheros.pdf" target="_blank">
+                <img src="doc/img/relacionFicheros.png" alt="">
             </a>
         </div>
         <div class="navigation-auto">

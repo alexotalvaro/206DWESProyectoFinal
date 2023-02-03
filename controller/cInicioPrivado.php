@@ -11,18 +11,13 @@ if (isset($_REQUEST["detalle"])) {
     header('Location: index.php');
     exit;
 }
-if (isset($_REQUEST["modificar"])) {
+if (isset($_REQUEST["micuenta"])) {
     $_SESSION['paginaAnterior'] = $_SESSION['paginaEnCurso'];
     $_SESSION['paginaEnCurso'] = 'micuenta';
     header('Location: index.php');
     exit;
 }
-if (isset($_REQUEST["borrar"])) {
-    $_SESSION['paginaAnterior'] = $_SESSION['paginaEnCurso'];
-    $_SESSION['paginaEnCurso'] = 'wip';
-    header('Location: index.php');
-    exit;
-}
+
 if (isset($_REQUEST["rest"])) {
     $_SESSION['paginaAnterior'] = $_SESSION['paginaEnCurso'];
     $_SESSION['paginaEnCurso'] = 'rest';

@@ -49,7 +49,7 @@
 
                 © Alejandro Otálvaro Marulanda
 
-                <a href="https://github.com/alexotalvaro/206DWESLoginLogoff" target="_blank" style="text-decoration: none">
+                <a href="https://github.com/alexotalvaro/206DWESProyectoFinal " target="_blank" style="text-decoration: none">
                     <img class="iconoGit" src="../doc/git.png" alt="git" title="GIT"/>
                 </a>
 

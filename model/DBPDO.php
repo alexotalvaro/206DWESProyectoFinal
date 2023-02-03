@@ -1,6 +1,6 @@
 <?php
 
-/*
+/**
  * @package: Aplicacion Final
  * @author: Alejandro Otálvaro Marulanda
  * @since: 26 01 2023

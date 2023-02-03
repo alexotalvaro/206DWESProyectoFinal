@@ -5,7 +5,7 @@ $mysqlDatabaseName = 'dbs9174059';
 $mysqlUserName = 'dbu2807977';
 $mysqlPassword = 'daw2_Sauces';
 $mysqlHostName = 'db5010845886.hosting-data.io';
-$mysqlImportFilename = 'CargaInicialDBDAW206ProyectoTema5-1-1.sql';
+$mysqlImportFilename = 'CargaInicialDBDAW206ProyectoFinal-1-1.sql';
 
 //Por favor, no haga ningún cambio en los siguientes puntos
 //Importación de la base de datos y salida del status

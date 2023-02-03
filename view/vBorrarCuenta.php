@@ -8,6 +8,6 @@
 <h3>Borrar Usuario</h3>
 <form>
     Estás seguro?
-    <input class="botonLogin" type="submit" name="borrar" value="Eliminar Cuenta">
-    <input class="botonLogin" type="submit" name="volver" value="Volver">
+    <input class="botonLogin" type="submit" name="borrar" value="SI">
+    <input class="botonLogin" type="submit" name="volver" value="NO">
 </form
