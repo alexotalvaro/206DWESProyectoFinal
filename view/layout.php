@@ -52,6 +52,8 @@
                 <a href="https://github.com/alexotalvaro/206DWESProyectoFinal " target="_blank" style="text-decoration: none">
                     <img class="iconoGit" src="../doc/git.png" alt="git" title="GIT"/>
                 </a>
+                
+                <form> <input class="botonLogin" type="submit" name="tecnologias" value="Tecnologías"></form>
 
                 <a href="http://www.linkedin.com/in/alejandro-otálvaro-marulanda/" target="_blank"
                    style="text-decoration: none">

@@ -1,10 +1,10 @@
 <?php
-/*
+
+/**
  * @package: Aplicacion Final
  * @author: Alejandro Otálvaro Marulanda
- * @since: 27 01 2023
+ * @since: 06/02/2023
  */
-
 if (isset($_REQUEST["volver"])) {
     $_SESSION['paginaEnCurso'] =  $_SESSION['paginaAnterior'];
     header('Location: index.php');
