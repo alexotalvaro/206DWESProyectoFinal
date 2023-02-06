@@ -24,8 +24,8 @@
         <div class="container">
 
             <header>
-                <div class="divReloj">
-                    <script src="../webroot/js/reloj.js">script</script>
+                <div id="divReloj" class="divReloj">
+                    <script src="webroot/js/reloj.js">script</script>
                 </div>
                 <h1>ALEJANDRO OTÁLVARO MARULANDA</h1>
                 <br>

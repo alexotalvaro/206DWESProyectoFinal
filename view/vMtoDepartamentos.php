@@ -22,7 +22,7 @@
         echo '<td>' . $_SESSION['departamento']->getDescDepartamento() . '</td>';
         echo '<td>' . $_SESSION['departamento']->getFechaCreacionDepartamento() . '</td>';
         echo '<td>' . $_SESSION['departamento']->getVolumenNegocio() . '</td>';
-        echo '<td>' . $_SESSION['departamento']->getFechaBajaDepartamento(). '</td>';
+        echo '<td>' . $_SESSION['departamento']->getFechaBajaDepartamento() . '</td>';
         print '</table>';
     }
     ?>
