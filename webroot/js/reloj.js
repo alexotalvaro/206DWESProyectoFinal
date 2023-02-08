@@ -37,10 +37,10 @@ function inicio() {
         var horacompleta = new Date();
         hora1.setAttribute("src", fotos[parseInt(horacompleta.getHours() / 10)]);
         hora2.setAttribute("src", fotos[parseInt(horacompleta.getHours() % 10)]);
-        span1.setAttribute("src", "fotos/colon.png");
+        span1.setAttribute("src", "webroot/images/colon.png");
         min1.setAttribute("src", fotos[parseInt(horacompleta.getMinutes() / 10)]);
         min2.setAttribute("src", fotos[parseInt(horacompleta.getMinutes() % 10)]);
-        span2.setAttribute("src", "fotos/colon.png");
+        span2.setAttribute("src", "webroot/images/colon.png");
         sec1.setAttribute("src", fotos[parseInt(horacompleta.getSeconds() / 10)]);
         sec2.setAttribute("src", fotos[parseInt(horacompleta.getSeconds() % 10)]);
     }

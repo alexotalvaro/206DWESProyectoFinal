@@ -12,7 +12,7 @@ if (isset($_REQUEST["pedir"])) {
     exit;
 }
 if (isset($_REQUEST["volver"])) {
-    $_SESSION['paginaEnCurso'] = $_SESSION['paginaAnterior'];
+    $_SESSION['paginaEnCurso'] = "inicioprivado";
     header('Location: index.php');
     exit;
 }

@@ -20,33 +20,33 @@
         <input type="radio" name="radio-btn" id="radio6">
         <div class="slide first">
             <a href="doc/230129ArbolDeNavegación.pdf" target="_blank">
-                <img src="doc/img/arbolNavegacion.png" alt="">
+                <img src="webroot/images/arbolNavegacion.png" alt="">
             </a>
 
         </div>
         <div class="slide">
             <a href="doc/230129CatalogoDeRequisitos.pdf" target="_blank">
-                <img src="doc/img/catalogoRequsitos.png" alt="">
+                <img src="webroot/images/catalogoRequsitos.png" alt="">
             </a>
         </div>
         <div class="slide">
             <a href="doc/230129DiagramaDeClases.pdf" target="_blank">
-                <img src="doc/img/diagramaClases.png" alt="">
+                <img src="webroot/images/diagramaClases.png" alt="">
             </a>
         </div>
         <div class="slide">
             <a href="doc/230110FicherosLoginLogoffMulticapaPOO.pdf" target="_blank">
-                <img src="doc/img/ficherosGenericos.png" alt="">
+                <img src="webroot/images/ficherosGenericos.png" alt="">
             </a>
         </div>
         <div class="slide">
             <a href="doc/201127ModeloFisicoDeDatos20-21.pdf" target="_blank">
-                <img src="doc/img/modeloFisicoDatos.png" alt="">
+                <img src="webroot/images/modeloFisicoDatos.png" alt="">
             </a>
         </div>
         <div class="slide">
             <a href="doc/230129RelaciónDeFicheros.pdf" target="_blank">
-                <img src="doc/img/relacionFicheros.png" alt="">
+                <img src="webroot/images/relacionFicheros.png" alt="">
             </a>
         </div>
         <div class="navigation-auto">

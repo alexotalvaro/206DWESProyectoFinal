@@ -1,6 +1,6 @@
 <?php
 
-/*
+/**
  * @package: Aplicacion Final
  * @author: Alejandro Otálvaro Marulanda
  * Arrays donde guardo las localizaciones de los controladores y las vistas.
@@ -21,6 +21,8 @@ require_once 'model/UsuarioPDO.php';
 require_once 'model/DBPDO.php';
 require_once 'model/ErrorApp.php';
 require_once 'model/REST.php';
+require_once 'model/Departamento.php';
+require_once 'model/DepartamentoPDO.php';
 
 define("OBLIGATORIO", 1);
 
@@ -34,10 +36,11 @@ $aControladores = [
     "error" => "controller/cError.php",
     "registro" => "controller/cRegistro.php",
     "rest" => "controller/cREST.php",
-    "mantenimiento" => "controller/cMantenimiento.php",
+    "mantenimiento" => "controller/cMtoDepartamentos.php",
     "micuenta" => "controller/cMiCuenta.php",
 //    "cambiarpassword"=>"controller/cCambiarPassword.php",
     "borrarcuenta" => "controller/cBorrarCuenta.php",
+    "tecnologias" => "controller/cTecnologias.php",
 ];
 
 $aVistas = [
@@ -50,9 +53,10 @@ $aVistas = [
     "error" => "view/vError.php",
     "registro" => "view/vRegistro.php",
     "rest" => "view/vREST.php",
-    "mantenimiento" => "view/vMantenimiento.php",
+    "mantenimiento" => "view/vMtoDepartamentos.php",
     "modificarusuario" => "view/vModificarUsuario.php",
     "micuenta" => "view/vMiCuenta.php",
 //    "cambiarpassword"=>"view/vCambiarPassword.php",
     "borrarcuenta" => "view/vBorrarCuenta.php",
+    "tecnologias" => "view/vTecnologias.php",
 ];

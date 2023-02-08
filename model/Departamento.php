@@ -12,13 +12,14 @@ class Departamento{
     private $descDepartamento;
     private $fechaCreacionDepartamento;
     private $volumenNegocio;
-    //private $fechaBajaDepartamento;
+    private $fechaBajaDepartamento;
     
-    public function __construct($codDepartamento, $descDepartamento, $fechaCreacionDepartamento, $volumenNegocio) {
+    public function __construct($codDepartamento, $descDepartamento, $fechaCreacionDepartamento, $volumenNegocio, $fechaBajaDepartamento=null) {
         $this->codDepartamento = $codDepartamento;
         $this->descDepartamento = $descDepartamento;
         $this->fechaCreacionDepartamento = $fechaCreacionDepartamento;
         $this->volumenNegocio = $volumenNegocio;
+        $this->fechaBajaDepartamento;
     }
     public function getCodDepartamento() {
         return $this->codDepartamento;
@@ -34,6 +35,9 @@ class Departamento{
 
     public function getVolumenNegocio() {
         return $this->volumenNegocio;
+    }
+    public function getFechaBajaDepartamento() {
+        return $this->fechaBajaDepartamento;
     }
 
     public function setCodDepartamento($codDepartamento): void {
@@ -51,4 +55,7 @@ class Departamento{
     public function setVolumenNegocio($volumenNegocio): void {
         $this->volumenNegocio = $volumenNegocio;
     } 
+     public function setFechaBajaDepartamento() {
+        return $this->fechaBajaDepartamento;
+    }
 }

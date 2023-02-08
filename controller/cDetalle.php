@@ -6,7 +6,7 @@
  */
 if (isset($_REQUEST["volver"])) {
     session_start();
-    $_SESSION['paginaEnCurso'] = $_SESSION['paginaAnterior'];
+    $_SESSION['paginaEnCurso'] = "inicioprivado";
     header('Location: index.php');
     exit;
 }
