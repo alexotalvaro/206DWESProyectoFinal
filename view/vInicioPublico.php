@@ -8,7 +8,7 @@
 <form>
     <input class="botonLogin" type="submit" name="iniciarsesion" value="Iniciar Sesion" >
     <input class="botonLogin" type="submit" name="registro" value="Registrarse">
-    <a href="doc/" target="_blank" style="text-decoration: none; color: black;">Listado de PDF </a>
+    <input class="botonLogin" type="submit" name="pdf" value="Ver PDF">
 </form>
 <div class="slider">
     <div class="slides">
