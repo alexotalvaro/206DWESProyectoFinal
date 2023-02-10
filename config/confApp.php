@@ -41,6 +41,7 @@ $aControladores = [
 //    "cambiarpassword"=>"controller/cCambiarPassword.php",
     "borrarcuenta" => "controller/cBorrarCuenta.php",
     "tecnologias" => "controller/cTecnologias.php",
+    "pdf"=>"controller/cPDF.php",
 ];
 
 $aVistas = [
@@ -59,4 +60,5 @@ $aVistas = [
 //    "cambiarpassword"=>"view/vCambiarPassword.php",
     "borrarcuenta" => "view/vBorrarCuenta.php",
     "tecnologias" => "view/vTecnologias.php",
+    "pdf"=>"view/vPDF.php"
 ];

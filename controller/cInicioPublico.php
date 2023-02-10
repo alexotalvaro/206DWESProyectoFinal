@@ -18,5 +18,11 @@ if (isset($_REQUEST['registro'])) { // Si pulsamos el botón de registrarse....
     header('Location: index.php'); // y me voy al index, en el cual, se cargara paginaencurso(registro) y ahí decide que hacer..
     exit;
 }
+if (isset($_REQUEST['pdf'])) { // Si pulsamos el botón de registrarse....
+    $_SESSION['paginaAnterior'] = $_SESSION['paginaEnCurso']; //La pagina anterior será iniciopublico, por si cancelamos..
+    $_SESSION['paginaEnCurso'] = 'pdf'; // La página en curso será la del registro.
+    header('Location: index.php'); // y me voy al index, en el cual, se cargara paginaencurso(registro) y ahí decide que hacer..
+    exit;
+}
 require_once $aVistas['layout']; //carga la pagina de inicio publico
 require_once $aVistas[$_SESSION['paginaEnCurso']];
