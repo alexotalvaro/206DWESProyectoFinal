@@ -1,26 +1,29 @@
 <?php
 
 /**
- * @package: Aplicacion Final
+ * Clase departamento
+ * 
+ * Clase que se usa para crear Objetos departamentos
+ * 
  * @author: Alejandro Otálvaro Marulanda
  * @since: 26 01 2023
- * Clase departamento
  */
-class Departamento{
-    
+class Departamento {
+
     private $codDepartamento;
     private $descDepartamento;
     private $fechaCreacionDepartamento;
     private $volumenNegocio;
     private $fechaBajaDepartamento;
-    
-    public function __construct($codDepartamento, $descDepartamento, $fechaCreacionDepartamento, $volumenNegocio, $fechaBajaDepartamento=null) {
+
+    public function __construct($codDepartamento, $descDepartamento, $fechaCreacionDepartamento, $volumenNegocio, $fechaBajaDepartamento = null) {
         $this->codDepartamento = $codDepartamento;
         $this->descDepartamento = $descDepartamento;
         $this->fechaCreacionDepartamento = $fechaCreacionDepartamento;
         $this->volumenNegocio = $volumenNegocio;
         $this->fechaBajaDepartamento;
     }
+
     public function getCodDepartamento() {
         return $this->codDepartamento;
     }
@@ -36,6 +39,7 @@ class Departamento{
     public function getVolumenNegocio() {
         return $this->volumenNegocio;
     }
+
     public function getFechaBajaDepartamento() {
         return $this->fechaBajaDepartamento;
     }
@@ -54,8 +58,10 @@ class Departamento{
 
     public function setVolumenNegocio($volumenNegocio): void {
         $this->volumenNegocio = $volumenNegocio;
-    } 
-     public function setFechaBajaDepartamento() {
+    }
+
+    public function setFechaBajaDepartamento() {
         return $this->fechaBajaDepartamento;
     }
+
 }

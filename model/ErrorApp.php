@@ -1,20 +1,21 @@
 <?php
 
-/*
- * @package: Aplicacion Final
+/**
+ * Clase Error
+ * 
+ * Clase que genera un Error, cuando en tu aplicacion salta un error.
+ * 
  * @author: Alejandro Otálvaro Marulanda
  * @since: 26 01 2023
- * Clase que genera un Error, cuando en tu aplicacion salta un error.
  */
+class ErrorApp {
 
-class ErrorApp{
     private $codError;
     private $descError;
     private $archivoError;
     private $lineaError;
     private $paginaSiguiente;
 
-    
     public function __construct($codError, $descError, $archivoError, $lineaError, $paginaSiguiente) {
         $this->codError = $codError;
         $this->descError = $descError;
@@ -42,6 +43,5 @@ class ErrorApp{
     public function getPaginaSiguiente() {
         return $this->paginaSiguiente;
     }
-
 
 }

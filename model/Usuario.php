@@ -1,16 +1,15 @@
 <?php
-
-/**
- * Objeto Usuario
- * 
- * Define un objeto Usuario
- * 
- * @package: Aplicacion Final
- * @author: Alejandro Otálvaro Marulanda
- * @since: 26 01 2023
- */
+   /**
+     * Objeto Usuario
+     * 
+     * Define un objeto Usuario
+     * 
+     * @package: Aplicacion Final
+     * @author: Alejandro Otálvaro Marulanda
+     * @since: 26 01 2023
+     */
 class Usuario {
-
+ 
     private $codUsuario;
     private $password;
     private $descUsuario;

@@ -1,14 +1,19 @@
 <?php
 
-/**
- * @package: Aplicacion Final
- * @author: Alejandro Otálvaro Marulanda
- * @since: 26 01 2023
- */
 require_once 'config/confApp.php';
 
 class DBPDO implements DB {
 
+    /**
+     * Funcion para ejecutar una consulta
+     * 
+     * Ejecuta una consulta y devuelve un objeto resultado de dicha consulta.
+     *
+     * @param string $entradaSQL consulta sql
+     * @param array $parametros parametros de la consulta 
+     * @author: Alejandro Otálvaro Marulanda
+     * @since: 26 01 2023
+     */
     public static function ejecutarConsulta($sentenciaSQL, $parametros = null) {
         try {
             $miDB = new PDO(DSN, USUARIO, CONTRA); //Conexion a la BD muestra los datos y guarda el objeto
