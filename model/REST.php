@@ -1,13 +1,21 @@
 <?php
 
-/*
- * @package: Aplicacion Final
+/**
+ * API REST 
+ * 
+ * Clase que trabaja la API de la NASA
+ * 
  * @author: Alejandro Otálvaro Marulanda
  * @since: 31 01 2023
  */
-
 class REST {
 
+    /**
+     * Metodo que llama la API
+     * 
+     * Método utilizado para llamar la api de la nasa y nos devuelva la imagen del dia de la NASA
+     * @return url
+     */
     public static function apiNasa() {
         $apiKey = "xwbo4dgOUps0eNUlUFZmzWTwaEXPlUXDIaCj89ag";
         $apiNasa = [
