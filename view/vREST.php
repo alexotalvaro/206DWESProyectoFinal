@@ -50,7 +50,7 @@
         echo "<table>";
         foreach ($aHP as $item) {
             echo "<tr><td>" . $item['name'] . "</td>";
-            echo "<td>".$item['actor'] ."</td></tr>";
+            echo "<td>" . $item['actor'] . "</td></tr>";
         }
         echo '</table>';
     }
