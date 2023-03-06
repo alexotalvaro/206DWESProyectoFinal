@@ -7,6 +7,10 @@
  */
 if (isset($_REQUEST["buscar"])) {
     if (!empty($_REQUEST['descripcion'])) {
+
+        if (!isset($_REQUEST['descripcion'])) {
+            $_REQUEST['descripcion'] = '';
+        }
         $_SESSION['departamento'] = DepartamentoPDO::buscarDepartamentoPorDescripcion($_REQUEST['descripcion']);
         header('Location: index.php');
         exit;

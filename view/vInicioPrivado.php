@@ -24,6 +24,11 @@
     <br>
     <input class="botonLogin" type="submit" name="rest" value="REST">
     <input class="botonLogin" type="submit" name="mtoDpto" value="Mtto Dpto">
+    <?php if ($_SESSION['usuarioDWES206ProyectoFinal']->getPerfil()== 'administrador') { ?>
+        <br>
+        <input class="botonLogin" type="submit" name="mtoUsuario" value="Mtto Usuario">
+    <?php }
+    ?>
     <br>
     <input class="botonLogin" type="submit" name="error" value="Error">
     <input class="botonLogin" type="submit" name="salir" value="Salir">

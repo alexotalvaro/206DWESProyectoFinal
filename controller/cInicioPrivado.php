@@ -30,6 +30,12 @@ if (isset($_REQUEST["mtoDpto"])) {
     header('Location: index.php');
     exit;
 }
+if (isset($_REQUEST["mtoUsuario"])) {
+    $_SESSION['paginaAnterior'] = $_SESSION['paginaEnCurso'];
+    $_SESSION['paginaEnCurso'] = 'mantenimientoUsuario';
+    header('Location: index.php');
+    exit;
+}
 if (isset($_REQUEST["error"])) {
     DBPDO::ejecutarConsulta("INSERT INTO T_02Usera VALUES('pepe')");
     $_SESSION['paginaAnterior'] = $_SESSION['paginaEnCurso'];

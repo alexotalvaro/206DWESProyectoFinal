@@ -46,13 +46,17 @@
                 <a href="../doc/CV.pdf"  target="_blank" style="text-decoration: none">
                     <img class="icono_cv" src="../doc/cv-logo.png" alt="curriculum" title="curriculum vitae" class="icono_cv" />
                 </a>
+                
+                <a href="doc/phpdoc/index.html"  target="_blank" style="color: black; text-decoration: none">
+                    <img class="iconoPhpDoc" src="webroot/images/doc.png"  alt="phpDoc" title="phpDoc" />
+                </a>
 
                 © Alejandro Otálvaro Marulanda
 
                 <a href="https://github.com/alexotalvaro/206DWESProyectoFinal " target="_blank" style="text-decoration: none">
                     <img class="iconoGit" src="../doc/git.png" alt="git" title="GIT"/>
                 </a>
-                
+
                 <form> <input class="botonLogin" type="submit" name="tecnologias" value="Tecnologías"></form>
 
                 <a href="http://www.linkedin.com/in/alejandro-otálvaro-marulanda/" target="_blank"

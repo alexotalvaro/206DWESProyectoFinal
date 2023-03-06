@@ -31,5 +31,4 @@ insert into T01_Usuario(T01_CodUsuario,T01_Password,T01_DescUsuario,T01_FechaHor
 ('luis',sha2(concat('luis','paso'),256),'Luis',now()),
 ('otalvaro',sha2(concat('otalvaro','paso'),256),'Alejandro',now()),
 ('josue',sha2(concat('josue','paso'),256),'Josue',now()),
-('manuel',sha2(concat('manuel','paso'),256),'Manuel',now()),
-('admin',sha2(concat('admin','paso'),256),'Administrador',now());
+('manuel',sha2(concat('manuel','paso'),256),'Manuel',now());

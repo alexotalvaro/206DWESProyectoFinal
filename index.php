@@ -21,5 +21,4 @@ if ($_SESSION['paginaEnCurso'] != 'tecnologias') {
 }
 
 require_once $aControladores[$_SESSION['paginaEnCurso']];
-require_once $aVistas[$_SESSION['paginaEnCurso']];
 ?>
